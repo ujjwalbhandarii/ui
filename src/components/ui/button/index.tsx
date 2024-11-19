@@ -1,7 +1,6 @@
-import React from 'react';
+import React, { ComponentProps } from 'react';
 
-export interface ButtonProps
-  extends React.ButtonHTMLAttributes<HTMLButtonElement> {}
+interface ButtonProps extends ComponentProps<'button'> {}
 
 export const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
   ({ ...props }, ref) => {
