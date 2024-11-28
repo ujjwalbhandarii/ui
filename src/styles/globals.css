@@ -3,7 +3,28 @@
 @tailwind utilities;
 
 @layer base {
-  * {
-    @apply border-border;
+  body {
+    @apply font-airbnb;
   }
+}
+
+@font-face {
+  font-family: 'airbnbcereal';
+  font-weight: 400;
+  font-style: normal;
+  src: url('/fonts/AirbnbCereal_W_Lt.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'airbnbcereal';
+  font-weight: 700;
+  font-style: normal;
+  src: url('/fonts/AirbnbCereal_W_Bd.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'airbnbcereal';
+  font-weight: 800;
+  font-style: normal;
+  src: url('/fonts/AirbnbCereal_W_XBd.otf') format('opentype');
 }
