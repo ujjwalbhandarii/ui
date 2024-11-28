@@ -12,18 +12,11 @@ const meta: Meta = {
   },
   argTypes: {
     size: {
-      options: ['default', 'sm', 'lg', 'icon'],
+      options: ['full-width', 'sm'],
       control: { type: 'select' },
     },
     variant: {
-      options: [
-        'default',
-        'destructive',
-        'outline',
-        'secondary',
-        'ghost',
-        'link',
-      ],
+      options: ['default', 'secondary'],
       control: { type: 'select' },
     },
     type: {
@@ -45,26 +38,8 @@ export const Secondary: Story = {
   },
 };
 
-export const Destructive: Story = {
+export const Tertiary: Story = {
   args: {
-    variant: 'destructive',
-  },
-};
-
-export const Outline: Story = {
-  args: {
-    variant: 'outline',
-  },
-};
-
-export const Ghost: Story = {
-  args: {
-    variant: 'ghost',
-  },
-};
-
-export const Link: Story = {
-  args: {
-    variant: 'link',
+    variant: 'tertiary',
   },
 };
